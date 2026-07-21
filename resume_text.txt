@@ -1,0 +1,47 @@
+YASHASWINI GOWDA M 
+Phone: +91 8310777365   |   Email: yashaswini11092005@gmail.com |   LinkedIn   |   GitHub   |   Portfolio 
+EDUCATION 
+Year Degree Institute CGPA / % 
+2023 – 2027 B.Tech – Computer Science & 
+Engineering Dayananda Sagar University (DSU) 8.81 / 10 (Till 6th 
+Sem) 
+2021 – 2023 12th Grade – Karnataka State Board 
+(PCMB) 
+Christ Academy Junior College 
+(CAJC) 85.5% 
+2011 – 2021 10th Grade – CBSE New Baldwin International School 
+(NBIS) 70% 
+PROJECTS 
+ERAAS – Emergency Response Agentic AI System  |  FastAPI, Gemini API, WebSocket, SQLAlchemy, Leaflet.js 
+Live Demo   |   GitHub Repo 
+● Built a Perceive → Reason → Act → Reflect agentic MVP for PS186, with a simulated real-time incident feed driving 
+a continuous agent loop. 
+● Developed a real-time WebSocket backend for sub-second synchronization with the dispatcher dashboard. 
+● Integrated Human-in-the-Loop (HITL) overrides to combine AI speed with strict manual safety checks. 
+● Live Leaflet map dashboard color-codes incidents by severity with human dispatch/resolve override; automated pytest 
+suite and C4 architecture docs; deployed on Render. 
+ProtoDraft AI: Clinical Protocol Generator |   Google Gemini API, JWT (JSON Web Tokens) React, Vercel, Render 
+Live Demo   |   GitHub Repo 
+● Built a full-stack Generative AI application using React, Node.js, and Google Gemini to automate clinical trial draft. 
+● Engineered a 3-stage AI pipeline to automate ICH-compliant clinical trial schedules and protocol synopses. 
+● Secured sessions with JWT authentication and deployed the full-stack architecture on Vercel and Render. 
+● Designed a mobile-first, animated UI wizard using Tailwind CSS to streamline complex data inputs. 
+RockShield AI – Rockfall Prediction & Alert System  |  Python, TensorFlow, PyTorch, Scikit-learn, React.js, Django 
+GitHub Repo 
+● Digital Twin rockfall prediction: 3D terrain modeling, live sensor data, physics-based + ML surrogate models. 
+● Risk classification (Scikit-learn, PyTorch, TensorFlow) on a color-coded hazard dashboard with weather API 
+integration. 
+● Automated Twilio/SMTP evacuation alerts; shortlisted for SIH 2025, Disaster Management (SIH25071). 
+EXPERIENCE 
+IBM Cloud & AI – Emerging Technologies  |  IBM Cloud, Watson AI, ML Deployment 
+● Hands-on with IBM Cloud, Watson AI, Cloud Object Storage, and ML deployment pipelines. 
+● Certified through IBM Skills Build (Edunet Foundation). 
+PUBLICATION 
+Co-authored and published a research paper, "Explainable CNN Framework for Automated MRI Distortion Detection" (94.5% 
+accuracy, Grad-CAM based interpretability), in the proceedings of an IEEE conference hosted at Dayananda Sagar University. 
+TECHNICAL SKILLS & CERTIFICATIONS 
+Languages: Python, Java, C, HTML, CSS, JavaScript 
+Technologies / Frameworks: Machine Learning, Data Preprocessing, Full Stack Development, GitHub, Power BI, Data 
+Visualization, UI/UX Design  
+Certifications: Python Course Completion – GeeksforGeeks; Skills Build & IBM Cloud – Edunet Foundation; 
+Fundamentals of Power BI 

@@ -171,6 +171,7 @@ const dancePhotos = ['assets/images/dance1.jpg', 'assets/images/dance2.jpg'];
 let danceIdx = 0;
 const danceBg = document.getElementById('dance-bg');
 if (danceBg) {
+
   danceBg.style.backgroundImage = `url('${dancePhotos[0]}')`;
   setInterval(() => {
     danceBg.style.opacity = '0';
@@ -180,4 +181,78 @@ if (danceBg) {
       danceBg.style.opacity = '1';
     }, 1000);
   }, 4000);
+}
+
+/* ===== CHATBOT WIDGET LOGIC ===== */
+const robotTrigger = document.getElementById('robot-trigger');
+const chatbotWindow = document.getElementById('chatbot-window');
+const chatbotClose = document.getElementById('chatbot-close');
+const chatbotMessages = document.getElementById('chatbot-messages');
+const chatbotOptions = document.getElementById('chatbot-options');
+const robotBubble = document.getElementById('robot-bubble');
+
+if (robotTrigger && chatbotWindow) {
+  const bubbleMessages = ["Ask me anything!", "Wanna know about Yashaswini?"];
+  let bubbleIdx = 0;
+  
+  setInterval(() => {
+    if(!chatbotWindow.classList.contains('open')) {
+      robotBubble.classList.remove('show');
+      setTimeout(() => {
+        bubbleIdx = (bubbleIdx + 1) % bubbleMessages.length;
+        robotBubble.innerText = bubbleMessages[bubbleIdx];
+        robotBubble.classList.add('show');
+      }, 400);
+    }
+  }, 2500);
+
+  setTimeout(() => { robotBubble.classList.add('show'); }, 1500);
+
+  const botResponses = {
+    'projects': "I have built AI MVP systems like ERAAS and full-stack GenAI apps like ProtoDraft AI! You can see the live demos in the Projects section.",
+    'experience': "I have hands-on experience with IBM Cloud, Watson AI, and ML deployments. I also published a research paper on Explainable CNNs!",
+    'contact': "You can email me at yashaswini11092005@gmail.com, connect on LinkedIn, or just drop a message in the form at the bottom!"
+  };
+
+  const optionsHTML = `
+    <button class="chat-opt-btn" onclick="handleChatOption('projects')">🚀 Tell me about your projects</button>
+    <button class="chat-opt-btn" onclick="handleChatOption('experience')">💼 Tell me about your experience</button>
+    <button class="chat-opt-btn" onclick="handleChatOption('contact')">✉️ How can I contact you?</button>
+  `;
+
+  function appendMessage(text, sender) {
+    const msgDiv = document.createElement('div');
+    msgDiv.classList.add('chat-msg', sender === 'bot' ? 'msg-bot' : 'msg-user');
+    msgDiv.innerHTML = text;
+    chatbotMessages.appendChild(msgDiv);
+    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  }
+
+  robotTrigger.addEventListener('click', () => {
+    chatbotWindow.classList.add('open');
+    robotBubble.classList.remove('show');
+    if (chatbotMessages.children.length === 0) {
+      appendMessage("Hi there! 👋 I'm Yashaswini's AI Assistant. How can I help you learn more about her?", 'bot');
+      setTimeout(() => { chatbotOptions.innerHTML = optionsHTML; }, 600);
+    }
+  });
+
+  chatbotClose.addEventListener('click', () => {
+    chatbotWindow.classList.remove('open');
+  });
+
+  window.handleChatOption = function(opt) {
+    chatbotOptions.innerHTML = '';
+    const userMsg = {
+      'projects': "Tell me about your projects",
+      'experience': "Tell me about your experience",
+      'contact': "How can I contact you?"
+    }[opt];
+    appendMessage(userMsg, 'user');
+    
+    setTimeout(() => {
+      appendMessage(botResponses[opt], 'bot');
+      setTimeout(() => { chatbotOptions.innerHTML = optionsHTML; }, 1000);
+    }, 600);
+  };
 }

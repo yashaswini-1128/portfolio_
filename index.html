@@ -26,9 +26,11 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="#home"         class="nav-link" data-section="home">Home</a></li>
       <li><a href="#about"        class="nav-link" data-section="about">About</a></li>
+      <li><a href="#experience"   class="nav-link" data-section="experience">Experience</a></li>
       <li><a href="#education"    class="nav-link" data-section="education">Education</a></li>
       <li><a href="#skills"       class="nav-link" data-section="skills">Skills</a></li>
       <li><a href="#projects"     class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#publication"  class="nav-link" data-section="publication">Publication</a></li>
       <li><a href="#hobbies"      class="nav-link" data-section="hobbies">Hobbies</a></li>
       <li><a href="#contact"      class="nav-link" data-section="contact">Contact</a></li>
     </ul>
@@ -101,9 +103,35 @@ committed to continuous growth, both personally and professionally.
         <div class="about-badges">
           <span class="badge badge-purple">✦ Btech student</span>
       
-          <span class="badge badge-gold">✦ 8.66 CGPA</span>
+          <span class="badge badge-gold">✦ 8.81 CGPA(Till 6th sem)</span>
           <span class="badge badge-orange">✦ Classical Dancer</span>
           
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE SECTION ===== -->
+<section id="experience" class="section experience-section">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag">Career</span>
+      <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-content">
+            <h3>IBM Cloud &amp; AI – Emerging Technologies</h3>
+            <p class="timeline-institution"><i class="fas fa-building"></i> IBM Cloud, Watson AI, ML Deployment</p>
+            <p style="margin-top: 10px; color: var(--text-secondary); line-height: 1.6;">
+              &bull; Hands-on with IBM Cloud, Watson AI, Cloud Object Storage, and ML deployment pipelines.<br>
+              &bull; Certified through IBM Skills Build (Edunet Foundation).
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -234,71 +262,84 @@ committed to continuous growth, both personally and professionally.
     </div>
     <div class="projects-grid">
 
-      <!-- Project 1 -->
-      <div class="project-card glass-card fade-in">
-        <div class="project-top">
-          <div class="project-icon-wrap"><i class="fas fa-brain"></i></div>
-          <span class="project-badge badge-purple-solid">📄 Published Research Paper</span>
-        </div>
-        <h3 class="project-title">Explainable CNN Framework for MRI Distortion Detection</h3>
-        <p class="project-desc">94.5% accuracy CNN model with Grad-CAM heatmaps for clinical interpretability. Co-authored published research paper at DSU for automated MRI artifact identification.</p>
-        <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">Grad-CAM</span><span class="tag">OpenCV</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/yashaswini-1128/MRI-distortion-detection-using-gradcam" target="_blank" rel="noopener" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> GitHub</a>
-          <a href="assets/documents/research_paper.pdf" target="_blank" rel="noopener" class="proj-btn proj-btn-primary"><i class="fas fa-file-alt"></i> Research Paper</a>
-        </div>
-      </div>
+
 
       <!-- Project 2 -->
       <div class="project-card glass-card fade-in">
         <div class="project-top">
-          <div class="project-icon-wrap project-icon-cyan"><i class="fas fa-satellite-dish"></i></div>
+          <div class="project-icon-wrap project-icon-cyan"><i class="fas fa-robot"></i></div>
+          <span class="project-badge badge-blue-solid">AI MVP</span>
         </div>
-        <h3 class="project-title">Niyantrana SOS – Tactical Operations Dashboard</h3>
-        <p class="project-desc">Real-time tactical HUD with live unit tracking and incident management. Built with Next.js and Firebase, deployed on Vercel for operational resilience.</p>
+        <h3 class="project-title">ERAAS – Emergency Response Agentic AI System</h3>
+        <p class="project-desc">Perceive &rarr; Reason &rarr; Act &rarr; Reflect agentic MVP for PS186. Features a real-time WebSocket backend, Human-in-the-Loop overrides, and a live Leaflet map dashboard.</p>
         <div class="project-tags">
-          <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Firebase</span><span class="tag">React</span>
+          <span class="tag">FastAPI</span><span class="tag">Gemini API</span><span class="tag">WebSocket</span><span class="tag">SQLAlchemy</span><span class="tag">Leaflet.js</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/yashaswini-1128/niyantrana_sos" target="_blank" rel="noopener" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://github.com/yashaswini-1128/niyantrana_sos" target="_blank" rel="noopener" class="proj-btn proj-btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="https://github.com/yashaswini-1128/ERAAS" target="_blank" rel="noopener" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://eraas.onrender.com" target="_blank" rel="noopener" class="proj-btn proj-btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
         </div>
       </div>
 
       <!-- Project 3 -->
       <div class="project-card glass-card fade-in">
         <div class="project-top">
-          <div class="project-icon-wrap project-icon-orange"><i class="fas fa-mountain"></i></div>
-          <span class="project-badge badge-gold-solid">SIH 2025 </span>
+          <div class="project-icon-wrap project-icon-orange"><i class="fas fa-file-medical"></i></div>
         </div>
-        <h3 class="project-title">RockShield AI – Rockfall Prediction &amp; Alert System</h3>
-        <p class="project-desc">AI-driven rockfall risk prediction with Digital Twin simulation. Automated Twilio/SMTP emergency alerts and real-time monitoring dashboard for geohazard safety.</p>
+        <h3 class="project-title">ProtoDraft AI: Clinical Protocol Generator</h3>
+        <p class="project-desc">Full-stack Generative AI app using React and Google Gemini to automate ICH-compliant clinical trial drafts. Features a mobile-first wizard UI and JWT authentication.</p>
         <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">Scikit-learn</span><span class="tag">React.js</span><span class="tag">Django</span>
+          <span class="tag">React</span><span class="tag">Gemini API</span><span class="tag">JWT</span><span class="tag">Node.js</span><span class="tag">Tailwind</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/yashaswini-1128" target="_blank" rel="noopener" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://github.com/yashaswini-1128/GENAI" target="_blank" rel="noopener" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://genai-chi.vercel.app/" target="_blank" rel="noopener" class="proj-btn proj-btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
         </div>
       </div>
 
       <!-- Project 4 -->
       <div class="project-card glass-card fade-in">
         <div class="project-top">
-          <div class="project-icon-wrap project-icon-blue"><i class="fas fa-cloud"></i></div>
-          <span class="project-badge badge-blue-solid">✅ IBM Certified</span>
+          <div class="project-icon-wrap project-icon-blue"><i class="fas fa-mountain"></i></div>
+          <span class="project-badge badge-gold-solid">SIH 2025</span>
         </div>
-        <h3 class="project-title">IBM Cloud &amp; AI – Emerging Technologies</h3>
-        <p class="project-desc">Hands-on cloud and AI projects covering Watson AI, ML deployment pipelines, and IBM Cloud services. Certified by IBM &amp; Edunet Foundation.</p>
+        <h3 class="project-title">RockShield AI – Rockfall Prediction &amp; Alert</h3>
+        <p class="project-desc">Digital Twin rockfall prediction via 3D terrain modeling and ML surrogate models. Includes a hazard dashboard and automated Twilio/SMTP evacuation alerts.</p>
         <div class="project-tags">
-          <span class="tag">IBM Cloud</span><span class="tag">Watson AI</span><span class="tag">ML Deployment</span>
+          <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">React.js</span><span class="tag">Django</span>
         </div>
         <div class="project-links">
           <a href="https://github.com/yashaswini-1128" target="_blank" rel="noopener" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> GitHub</a>
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ===== PUBLICATION SECTION ===== -->
+<section id="publication" class="section publication-section">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag">Research</span>
+      <h2 class="section-title">My <span class="gradient-text">Publication</span></h2>
+    </div>
+    <div class="projects-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+      <div class="project-card glass-card fade-in">
+        <div class="project-top">
+          <div class="project-icon-wrap"><i class="fas fa-book-open"></i></div>
+          <span class="project-badge badge-purple-solid">📄 Published Research Paper</span>
+        </div>
+        <h3 class="project-title">Explainable CNN Framework for Automated MRI Distortion Detection</h3>
+        <p class="project-desc">Co-authored and published a research paper (94.5% accuracy, Grad-CAM based interpretability), in the proceedings of an IEEE conference hosted at Dayananda Sagar University.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">Grad-CAM</span><span class="tag">OpenCV</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yashaswini-1128/MRI-distortion-detection-using-gradcam" target="_blank" rel="noopener" class="proj-btn proj-btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          <a href="assets/documents/research_paper.pdf" target="_blank" rel="noopener" class="proj-btn proj-btn-primary"><i class="fas fa-file-alt"></i> View Paper</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -450,6 +491,40 @@ committed to continuous growth, both personally and professionally.
   </div>
 </footer>
 
+<!-- ===== INTERACTIVE ROBOT WIDGET ===== -->
+<div class="chatbot-widget" id="chatbot-widget">
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <img src="assets/images/robot.png" alt="Robot" class="chatbot-avatar-small" onerror="this.src='https://cdn-icons-png.flaticon.com/512/4712/4712035.png'">
+        <span>Yashaswini's AI Assistant</span>
+      </div>
+      <button class="chatbot-close" id="chatbot-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Messages will be injected by JS -->
+    </div>
+    <div class="chatbot-options" id="chatbot-options">
+      <!-- Options will be injected by JS -->
+    </div>
+  </div>
+  
+  <div class="robot-trigger" id="robot-trigger">
+    <div class="robot-speech-bubble" id="robot-bubble">Ask me anything!</div>
+    <div class="robot-3d-container">
+      <lottie-player 
+        src="assets/images/robot.json" 
+        background="transparent" 
+        speed="1" 
+        style="width: 100%; height: 100%; transform: scale(1.1);" 
+        loop 
+        autoplay>
+      </lottie-player>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
